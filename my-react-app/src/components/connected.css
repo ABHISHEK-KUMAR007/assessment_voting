@@ -1,0 +1,151 @@
+.connected-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1e1e2f, #111111); 
+    box-sizing: border-box;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; 
+}
+
+.connected-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e63946; 
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+}
+
+.connected-account {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #b3b3b3; 
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px 0;
+    border: 2px solid #4caf50; 
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #2c2c34; 
+    color: #e0e0e0; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #00e676; 
+    outline: none;
+    box-shadow: 0 0 4px #00e676;
+}
+
+.login-button {
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #4caf50; 
+    color: #111111; 
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:hover {
+    background-color: #00e676; 
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.candidates-table {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #1e1e2f; 
+    color: #e0e0e0; 
+}
+
+.candidates-table th, .candidates-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #4caf50; 
+}
+
+.candidates-table th {
+    background-color: #4caf50; 
+    color: #111111;
+    font-weight: bold;
+}
+
+.candidates-table tr:nth-child(even) {
+    background-color: #2c2c34; 
+}
+
+.candidates-table tr:hover {
+    background-color: #4caf50;
+    color: #111111;
+}
+
+@media (max-width: 768px) {
+    .connected-header {
+        font-size: 1.8rem;
+    }
+
+    input[type="number"] {
+        font-size: 0.9rem;
+    }
+
+    .login-button {
+        font-size: 0.9rem;
+    }
+
+    .candidates-table th, .candidates-table td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .connected-header {
+        font-size: 1.5rem;
+    }
+
+    .connected-account {
+        font-size: 1rem;
+    }
+
+    input[type="number"] {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .login-button {
+        font-size: 0.85rem;
+    }
+
+    .candidates-table {
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .candidates-table th, .candidates-table td {
+        padding: 10px;
+    }
+}
